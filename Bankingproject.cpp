@@ -47,7 +47,7 @@ void account::show_account() const
 	cout<<"\nAccount No. : "<<acno;
 	cout<<"\nAccount Holder Name : ";
 	cout<<name;
-	cout<<"\nType of Account : "<<type;
+	cout<<"\nType of Account(S/C) : "<<type;
 	cout<<"\nBalance amount : "<<deposit;
 }
 
@@ -58,7 +58,7 @@ void account::modify()
 	cout<<"\nModify Account Holder Name : ";
 	cin.ignore();
 	cin.getline(name,50);
-	cout<<"\nModify Type of Account : ";
+	cout<<"\nModify Type of Account(S/C) : ";
 	cin>>type;
 	type=toupper(type);
 	cout<<"\nModify Balance amount : ";
@@ -371,11 +371,9 @@ void deposit_withdraw(int n, int option)
 
 void intro()
 {
-	cout<<"\n\n\n\t  BANK";
-	cout<<"\n\n\tMANAGEMENT";
-	cout<<"\n\n\t  SYSTEM";
-	cout<<"\n\n\n\nMADE BY : your name";
-	cout<<"\n\nSCHOOL : your school name";
+	cout<<"\n\t  BANK \t\t MANAGEMENT \t\t  SYSTEM";
+	cout<<"\n\n\n\t MADE BY : Avirup Chattopadhyay";
+	cout<<"\n\t SCHOOL :  School of Computer Science";
 	cin.get();
 }
 
